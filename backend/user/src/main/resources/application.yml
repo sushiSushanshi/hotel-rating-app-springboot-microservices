@@ -1,0 +1,18 @@
+server:
+   port: 8081
+
+spring:
+   application: 
+      name: USER-SERVICE 
+   datasource:
+      url: jdbc:mysql://localhost:3306/hotel_rating_app
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      
+   jpa:
+      hibernate:
+         ddl-auto: update
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL57Dialect
