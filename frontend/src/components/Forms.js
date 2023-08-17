@@ -18,12 +18,12 @@ console.log(formType);
       <div className='modal-container'>
         <div>
           
-          <button onClick={onClickLogin}>Login</button>
-          <button onClick={onClickRegistration}>Register</button>
+          <button className="btn btn-success" onClick={onClickLogin}>Login</button>
+          <button className="btn btn-success" onClick={onClickRegistration}>Register</button>
           {formType==="login" ? <Login/> : <Registration/>}
           
         </div>
-        <button onClick={close}>close</button>
+        <button className="btn btn-danger" onClick={close}>close</button>
       </div>
     </>
     
